@@ -11,7 +11,7 @@ const ProductList = () => {
 ]
 
   return (
-    <Grid container spacing={2} >
+    <Grid marginTop={2} container spacing={2} >
       {products.map((product) => (
         <Grid sx={{ width: '220px' }} item  key={product.id}>
           <Card sx={{ width:'200px', cursor: "pointer",'&:hover': {

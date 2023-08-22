@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Homepage from './components/Homepage';
 import ProductList from './components/ProductList';
@@ -12,21 +11,6 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/products">Products</Link>
-            </li>
-            
-            <li>
-              <Link to="/cart">Shopping Cart</Link>
-            </li>
-          </ul>
-        </nav>
-
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/products" element={<ProductList />} />
