@@ -1,7 +1,6 @@
 import { AppBar, Stack, Tab, Tabs, Toolbar, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
-import './custom-styles.css';
 
 function Header() {
   return (
@@ -14,7 +13,7 @@ function Header() {
           <Typography variant="h6" sx={{color:'black', fontWeight:'bold'}}>Favrrel</Typography>
           </Link>
           
-          <Tabs sx={{marginLeft:'auto'}}  textColor='black' className="header-tabs" >
+          <Tabs sx={{marginLeft:'auto'}}  className="header-tabs" >
             <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }} >
               <Tab label='Home' active />
             </Link>
